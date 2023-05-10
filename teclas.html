@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclas</title>
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+</head>
+<body>
+    <div class="teclado center">
+        <div class="fileira1">
+            <div class="esc center" id="27">Esc</div>
+            TECLADO 
+        </div>
+        <div class="fileira">
+            <div class="sq center" id="219">
+                <div>~</div><div>`</div>
+            </div>
+            <div class="sq center" id="49">
+                <div>!</div>
+                <div>1</div>
+            </div>
+            <div class="sq center" id="50">
+                <div>@</div>
+                <div>2</div>
+            </div>
+            <div class="sq center" id="51">
+                <div>#</div><div>3</div>
+            </div>
+            <div class="sq center" id="52">
+                <div>$</div><div>4</div>
+            </div>
+            <div class="sq center" id="53">
+                <div>%</div><div>5</div>
+            </div>
+            <div class="sq center" id="54">
+                <div>^</div><div>6</div>
+            </div>
+            <div class="sq center" id="55">
+                <div>&</div><div>7</div>
+            </div>
+            <div class="sq center" id="56">
+                <div>*</div><div>8</div>
+            </div>
+            <div class="sq center" id="57">
+                <div>(</div><div>9</div>
+            </div>
+            <div class="sq center" id="48">
+                <div>)</div><div>0</div>
+            </div>
+            <div class="sq center" id="189">
+                <div>_</div><div>-</div>
+            </div>
+            <div class="sq center" id="187">
+                <div>+</div><div>=</div>
+            </div>
+
+            <div class="backspace_tab center" id="8">Backspace</div>
+        </div>
+        <div class="fileira center">
+            <div class="backspace_tab center" id="9">Tab</div>
+            <div class="sq center" id="81">Q</div>
+            <div class="sq center" id="87">W</div>
+            <div class="sq center" id="69">E</div>
+            <div class="sq center" id="82">R</div>
+            <div class="sq center" id="84">T</div>
+            <div class="sq center" id="89">Y</div>
+            <div class="sq center" id="85">U</div>
+            <div class="sq center" id="73">I</div>
+            <div class="sq center" id="79">O</div>
+            <div class="sq center" id="80">P</div>
+            <div class="sq center" id="221">
+                <div>{</div><div>[</div>
+            </div>
+            <div class="sq center" id="220">
+                <div>}</div><div>]</div>
+            </div>
+            <div class="sq center" id="226">
+                <div>|</div><div>\</div>
+            </div>
+        </div>
+        <div class="fileira center">
+            <div class="pesquisar_enter center" id="20">
+                <ion-icon name="search"></ion-icon>
+            </div>
+            <div class="sq center" id="65">A</div>
+            <div class="sq center" id="83">S</div>
+            <div class="sq center" id="68">D</div>
+            <div class="sq center" id="70">F</div>
+            <div class="sq center" id="71">G</div>
+            <div class="sq center" id="72">H</div>
+            <div class="sq center" id="74">J</div>
+            <div class="sq center" id="75">K</div>
+            <div class="sq center" id="76">L</div>
+            <div class="sq center" id="191">
+                <div>:</div><div>;</div>
+            </div>
+            <div class="sq center" id="192">
+                <div>"</div><div>'</div>
+            </div>
+            <div class="pesquisar_enter center" id="13">Enter</div>
+        </div>
+        <div class="fileira center">
+            <div class="shift center" id="16">Shift</div>
+            <div class="sq center" id="90">Z</div>
+            <div class="sq center" id="88">X</div>
+            <div class="sq center" id="67">C</div>
+            <div class="sq center" id="86">V</div>
+            <div class="sq center" id="66">B</div>
+            <div class="sq center" id="78">N</div>
+            <div class="sq center" id="77">M</div>
+            <div class="sq center" id="188">
+                <div><</div><div>,</div>
+            </div>
+            <div class="sq center" id="190">
+                <div>></div><div>.</div>
+            </div>
+            <div class="sq center" id="193">
+                <div>?</div><div>/</div>
+            </div>
+            <div class="shift center" id="16">Shift</div>
+        </div>
+        <div class="fileira6">
+            <div class="ctrl_alt center" id="17">Ctrl</div>
+            <div class="ctrl_alt center" id="18">Alt</div>
+            <div class="espaco center" id="32"></div>
+            <div class="alt_ctrl center" id="18">Alt</div>
+            <div class="alt_ctrl center" id="17">Ctrl</div>
+            
+            <div class="esquerda center" id="37">
+                🡄
+            </div>
+            <div class="cima_baixo center">
+                <div class="cima center" id="38">
+                    🡅
+                </div>
+                <div class="baixo center" id="40">
+                    🡇
+                </div>
+            </div>
+            <div class="direita center" id="39">
+                🡆
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    
+document.onkeydown = Pega_Tecla;
+
+function Pega_Tecla(e) 
+{	
+    e = e || window.event;
+
+    tecla = e.keyCode;
+    console.log(tecla)
+    TirarCores();
+    document.getElementById(tecla).style.backgroundColor = "lightgray"
+    document.getElementById(tecla).style.borderStyle = "inset"
+    /*console.log(tecla); // MOSTRA O CÓDIGO DA TECLA PRESSIONADA*/
+}
+function TirarCores()
+{
+    for (x=1;x<=300;x++)
+    {
+        try
+        {
+            document.getElementById(x).style.backgroundColor = "white"
+            document.getElementById(x).style.borderStyle = "outset"
+        }
+        catch(erro)
+        {
+            
+        }
+    }
+}
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
+</script>
+</html>

@@ -1,0 +1,198 @@
+body
+        {
+            margin: 0%;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 180%;
+            font-weight: bold;
+            background-color: lightgrey;
+        }
+        .center
+        {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+        .teclado
+        {
+            width: 90%;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border-style: outset;
+            border-width: 3px;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .fileira1
+        {
+            width: 99.4%;
+            height: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+        .fileira
+        {
+            width: 100%;
+            height: 16.6%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .fileira6
+        {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .esc
+        {
+            width: 5.8%;
+            height: 90%;
+            border-style: outset;
+            border-width: 4px;
+            border-radius: 5px;
+            font-size: 80%;
+        }
+        .sq
+        {
+            width: 5.8%;
+            height: 90%;
+            border-style: outset;
+            border-width: 4px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        /*
+        .sq:hover
+        {
+            background-color: lightgrey;
+            border-style: inset;
+        }
+        */
+        .backspace_tab
+        {
+            width: 11%;
+            height: 90%;
+            border-style: outset;
+            border-width: 4px;
+            border-radius: 5px;
+            font-size: 80%;
+        }
+        .pesquisar_enter
+        {
+            width: 12%;
+            height: 90%;
+            border-style: outset;
+            border-width: 4px;
+            border-radius: 5px;
+            font-size: 80%;
+        }
+        .shift
+        {
+            width: 15%;
+            height: 90%;
+            border-style: outset;
+            border-width: 4px;
+            border-radius: 5px;
+            font-size: 80%;
+        }
+        .ctrl_alt
+        {
+            width: 13%;
+            height: 90%;
+            border-style: outset;
+            border-width: 4px;
+            border-radius: 5px;
+            font-size: 80%;  
+        }
+        .espaco
+        {
+            width: 38%;
+            height: 90%;
+            border-style: outset;
+            border-width: 4px;
+            border-radius: 5px;
+        }
+        .alt_ctrl
+        {
+            width: 5.8%;
+            height: 90%;
+            border-style: outset;
+            border-width: 4px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            font-size: 80%;
+        }
+        .esquerda
+        {
+            width: 5.8%;
+            height: 46%;
+            border-style: outset;
+            border-width: 4px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 3.2%;
+            font-size: 90%;
+        }
+        .cima_baixo
+        {
+            width: 5.8%;
+            height: 95%;
+            display: flex;
+            flex-direction: column;
+        }
+        .cima
+        {
+            width: 100%;
+            height: 46%;
+            border-style: outset;
+            border-width: 4px;
+            border-bottom-width: 2px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            font-size: 90%;
+        }
+        .baixo 
+        {
+            width: 100%;
+            height: 46%;
+            border-style: outset;
+            border-width: 4px;
+            border-top-width: 2px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            font-size: 90%;
+
+        }
+        .direita
+        {
+            width: 5.8%;
+            height: 46%;
+            border-style: outset;
+            border-width: 4px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 3.2%;
+            font-size: 90%;
+        }
